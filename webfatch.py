@@ -2,7 +2,8 @@ import webbrowser
 import urllib.request as urllib
 from urllib.parse import urlparse
 import webbrowser
-import nmap
+import dependency.nmap.nmap as nmap
+
 
 url = "http://technoindiauniversity.ac.in"
 
@@ -51,5 +52,10 @@ print (webbrowser.__all__)
 
 webbrowser.Chrome("http://google.com")
 print(webbrowser.Chrome("http://google.com"))
-webbrowser.open_new_tab("http://google.com")
+# webbrowser.open_new_tab("http://google.com")
 print(webbrowser.open_new_tab.__call__)
+
+#nmap features
+
+nm = nmap.PortScanner()
+print (nm.nmap_version())
