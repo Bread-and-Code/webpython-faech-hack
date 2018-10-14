@@ -6,7 +6,7 @@ import dependency.nmap.nmap as nmap
 
 
 url = "http://technoindiauniversity.ac.in"
-
+nmhost = 'www.technoindiauniversity.ac.in'
 #unicode responce of the url 
 responce = urllib.urlopen(url)
 print (responce)
@@ -63,3 +63,4 @@ scaninfo = nm.scan(hosts='www.technoindiauniversity.ac.in')
 print(scaninfo)
 
 print(nm.scaninfo())
+print(nm.has_host('www.technoindiauniversity.ac.in'))
