@@ -59,3 +59,5 @@ print(webbrowser.open_new_tab.__call__)
 
 nm = nmap.PortScanner()
 print (nm.nmap_version())
+scaninfo = nm.scan(hosts=url,arguments='-sV -A')
+print(scaninfo)
