@@ -64,3 +64,5 @@ print(scaninfo)
 
 print(nm.scaninfo())
 print(nm.has_host('www.technoindiauniversity.ac.in'))
+
+
